@@ -1,0 +1,47 @@
+; ----------------------------------------------------------
+; Demo script for TOPAZ card and ACR122U reader
+; (c) 2008, Advanced Card Systems Ltd.
+; ----------------------------------------------------------
+
+; 1)  Read memory of block 0x08 (blocksize is 1 byte)
+FF 00 00 00 05 D4 40 01 01 08 (6106)
+
+; 2)  Get the actual data
+FF C0 00 00 06 [xx xx xx xx] (9000)
+
+; 3)  Read memory of block 0x09 (blocksize is 1 byte)
+FF 00 00 00 05 D4 40 01 01 09 (6106)
+
+; 4)  Get the actual data
+FF C0 00 00 06 [xx xx xx xx] (9000)
+
+; 5)  Update memory of block 0x08 with 0xAA 
+FF 00 00 00 06 D4 40 01 53 08 AA (6106)
+
+; 6)  Get the result of the above command
+FF C0 00 00 06 [xx xx xx xx] (9000)
+
+; 7)  Update memory of block 0x09 with 0xBB 
+FF 00 00 00 06 D4 40 01 53 09 BB (6106)
+
+; 8)  Get the result of the above command
+FF C0 00 00 06 [xx xx xx xx] (9000)
+
+; 9)  Read memory of block 0x08 (blocksize is 1 byte)
+FF 00 00 00 05 D4 40 01 01 08 (6106)
+
+; 10) get the actual data
+FF C0 00 00 06 [xx xx xx xx] (9000)
+
+; 11) Read memory of block 0x09 (blocksize is 1 byte)
+FF 00 00 00 05 D4 40 01 01 09 (6106)
+
+; 12) get the actual data
+FF C0 00 00 06 [xx xx xx xx] (9000)
+
+; 13) Deselect the tag
+FF 00 00 00 03 D4 44 01 (6105)
+
+; 14) Get the result of the above command
+FF C0 00 00 05 [xx xx xx] (9000)
+

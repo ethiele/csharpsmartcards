@@ -1,0 +1,30 @@
+; ----------------------------------------------------------
+; Demo script for MIFARE Ultralight card and ACR122U reader
+; (c) 2008, Advanced Card Systems Ltd.
+; ----------------------------------------------------------
+
+; 1)  Read the contents of block 4 
+;     (Blocks 4, 5, 6 and 7 will read. Each data block consists of 4 bytes)
+FF 00 00 00 05 D4 40 01 30 04 (6115)
+
+; 2)  Get the actual data
+FF C0 00 00 15 [xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx] (9000)
+
+; 3)  Update the content of Block 04 with the data “AA BB CC DD” 
+;     (in a 16 bytes frame padded with zeroes)
+FF 00 00 00 15 D4 40 01 A0 04 AA BB CC DD 00 00 00 00 00 00 00 00 00 00 00 00 (6105)
+
+; 4)  Check the result of the update
+FF C0 00 00 05 [xx xx xx] (9000) 
+
+; 5)  Read the contents of block 4 again
+FF 00 00 00 05 D4 40 01 30 04 (6115)
+
+; 6)  Get the actual data
+FF C0 00 00 15 [xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx] (9000)
+
+; 7)  Halt the tag (optional)
+FF 00 00 00 03 D4 44 01 (6105)
+
+; 8)  Get the result of the above command 
+FF C0 00 00 05 [xx xx xx] (9000) 
