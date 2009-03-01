@@ -1,0 +1,11 @@
+C:\Users\ethiele\Documents\Visual Studio 2008\Projects\SmartTest\SmartTest\bin\Debug\SmartTest.exe
+C:\Users\ethiele\Documents\Visual Studio 2008\Projects\SmartTest\SmartTest\bin\Debug\SmartTest.pdb
+C:\Users\ethiele\Documents\Visual Studio 2008\Projects\SmartTest\SmartTest\bin\Debug\GemCard.dll
+C:\Users\ethiele\Documents\Visual Studio 2008\Projects\SmartTest\SmartTest\bin\Debug\Interop.GemCardExLib.dll
+C:\Users\ethiele\Documents\Visual Studio 2008\Projects\SmartTest\SmartTest\bin\Debug\Interop.SCARDSSPLib.dll
+C:\Users\ethiele\Documents\Visual Studio 2008\Projects\SmartTest\SmartTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ethiele\Documents\Visual Studio 2008\Projects\SmartTest\SmartTest\obj\Debug\SmartTest.Form1.resources
+C:\Users\ethiele\Documents\Visual Studio 2008\Projects\SmartTest\SmartTest\obj\Debug\SmartTest.Properties.Resources.resources
+C:\Users\ethiele\Documents\Visual Studio 2008\Projects\SmartTest\SmartTest\obj\Debug\SmartTest.csproj.GenerateResource.Cache
+C:\Users\ethiele\Documents\Visual Studio 2008\Projects\SmartTest\SmartTest\obj\Debug\SmartTest.exe
+C:\Users\ethiele\Documents\Visual Studio 2008\Projects\SmartTest\SmartTest\obj\Debug\SmartTest.pdb
